@@ -27,7 +27,7 @@ module.exports = function fetchActivity(id, outputDir) {
             "mode": "cors"
         }))
         .then(response => {
-            const file = join(outputDir, `${id}.tcx`);
+            const file = join(outputDir, `${id}.zip`);
             const dest = fs.createWriteStream(file);
             response.body.pipe(dest);
             return file;

@@ -2,3 +2,4 @@
 /.idea/
 /output/
 secrets.js
+.DS_Store

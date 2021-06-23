@@ -7,5 +7,5 @@ module.exports = {
     ACTIVITY_IDS_REFERRER: "https://connect.garmin.com/modern/activities",
     ACTIVITY_IDS_URL: "https://connect.garmin.com/modern/proxy/activitylist-service/activities/search/activities",
     ACTIVITY_REFERRER: "https://connect.garmin.com/modern/activity",
-    ACTIVITY_URL: "https://connect.garmin.com/modern/proxy/download-service/export/tcx/activity",
+    ACTIVITY_URL: "https://connect.garmin.com/modern/proxy/download-service/files/activity",
 }
