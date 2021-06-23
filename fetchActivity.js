@@ -1,6 +1,5 @@
 const mkdirp = require('mkdirp');
-const fs = require("fs");
-const join = require('path').join;
+const unzipper = require('unzipper');
 const fetch = require('node-fetch');
 const constants = require('./constants');
 const secrets = require('./secrets');
@@ -27,9 +26,7 @@ module.exports = function fetchActivity(id, outputDir) {
             "mode": "cors"
         }))
         .then(response => {
-            const file = join(outputDir, `${id}.zip`);
-            const dest = fs.createWriteStream(file);
-            response.body.pipe(dest);
-            return file;
+            response.body.pipe(unzipper.Extract({path: outputDir}));
+            return id;
         });
 }

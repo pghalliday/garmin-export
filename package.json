@@ -12,6 +12,7 @@
   "dependencies": {
     "mkdirp": "^1.0.4",
     "node-fetch": "^2.6.1",
-    "rxjs": "^7.1.0"
+    "rxjs": "^7.1.0",
+    "unzipper": "^0.10.11"
   }
 }
